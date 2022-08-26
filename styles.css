@@ -1,0 +1,268 @@
+#container h1{
+    font-size: large;
+    color: white;
+    text-align: left;
+}
+ h1{
+     text-align: center;
+     font-size: 250%;
+     font-style: italic;
+ }   
+   
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#MainNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:linear-gradient(to right, #00093c,#2d0b00);
+    text-align: center;
+    max-width: 100%;
+    
+}
+#MainNav li{
+    display: inline-block;
+}
+#MainNav li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-style: italic;
+    font-size: large;
+}
+#MainNav li a:hover{
+    background: blue;
+}
+
+
+.image{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 253, 253);
+}
+.image h2{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50,-50);
+    font-size: 450%;
+    font-style: italic;
+    
+}
+
+@media only screen and (min-device-width:360px) and (max-device-width:700px)
+{ 
+    
+    .image h2{
+        font-size: larger;
+    }
+}
+@media only screen and (min-device-width:360px) and (max-device-width:700px)
+{
+
+    .image img{
+        height: 400px;
+    }
+}
+@media only screen and (min-device-width:360px) and (max-device-width:700px)
+{
+    .city img{
+        width: 380px;
+    }
+
+    .flex img{
+        width: 380px;
+    }
+
+    #MainNav img{
+        height: 300px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+ h2{
+     text-align: center;
+     font-size: 300%;
+     font-style: italic;
+ }       
+
+.right{
+    padding-left: 40px;
+
+}       
+
+
+
+h3{ 
+    font-style: italic;
+    font-size: 300%;
+    text-align: center;
+}
+p{
+    font-size: x-large;
+    font-style: italic;
+}
+h4{
+    text-align: center;
+    font-size: 300%;
+    font-style: italic;
+ 
+}
+.border{
+    border-style: double ;
+    border-width: 8px;
+}
+.border p{
+    text-align: center;
+}
+.city{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+}
+.city img{
+    padding: 10px;
+}
+.font li{
+    font-size: xx-large;
+
+}
+.font{
+    border-style: double ;
+    border-width: 8px;
+
+}
+
+
+
+
+h5{
+    font-size: 300%;
+    text-align: center;
+    font-style: italic;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.flex img{
+    padding: 10px;
+}
+
+.list{
+    font-size: larger;
+}
+.para{
+    border-style: double ;
+    border-width: 8px;
+}
+.para p{
+    font-size: x-large;
+    font-style: italic;
+    text-align: center;
+}
+.para li{
+    font-size: xx-large;
+    font-style: bold;
+
+}
+h6{
+    font-size: 300%;
+    text-align: center;
+    font-style: italic;
+}
+.head{
+    text-align: center;
+}
+
+table,th,td{
+    border: 3px solid black;
+    padding: 5px;
+} 
+#customers tr:hover{
+    background-color: #f2f2f2;   
+}
+
+
+
+#beaches .flex{
+    border-style: double ;
+    border-width: 8px;
+
+}
+
+#activities .flex{
+    border-style: double;
+    border-width: 8px;
+}
+footer{
+    height: 160px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background:linear-gradient(to right, #00093c,#2d0b00);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+}
+.call li a{
+    color: white;
+    
+    
+}
+.call ul{
+    margin: 0;
+    text-align: left;
+    line-height: 30px;
+    list-style: none;
+    
+}
+.call li a:hover{
+    color: blue;
+}
+
+.call span{
+    position: relative;
+    font-size: 200%;
+    top: 10px;
+   
+}
+
+.tea{
+    border-style: double;
+    border-width: 8px;
+}
+.tea img{
+    padding: 6px;
+}
+
+.heading{
+    color: darkblue;
+}
+
+.char {
+    color: darkblue;
+    font-size: x-large;
+    
+}

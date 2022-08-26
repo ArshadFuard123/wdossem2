@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <title> DONATIONS</title>
+        
+    </head>
+</head>
+<body>
+    
+<div class="donation-form">
+    <form action="" class="contact-col" id="frmDonation">
+        <label for="nameinput"></label>
+        <input type="text" id="name" placeholder="Enter your Full name" required>
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Enter your email" required >
+        <textarea  rows="3" id="address" placeholder="Enter your address" required ></textarea>
+        <label for="Donations" id="fixedDonations" class="lbdate">Select fixed Donation values from below list</label><br>
+        <select name="language" class="custom-select" id="fixedDonatons" multiple >
+            <option value="100">LKR 100 </option>
+            <option value="500">LKR 500 </option>
+            <option value="1000">LKR 1000 </option>
+            <option value="2500">LKR 2500 </option>
+            <option value="5000">LKR 5000 </option>
+            
+          </select>
+          <br>
+        <textarea  rows="5" id="comment" placeholder="Donation Commment" required ></textarea>
+        
+    </form>
+
+    <form class="paymentDetails" action=""  method="post" >
+        <div class="inputBox">
+            <span>Card number</span>
+            <label for="cardNumber"></label>
+            <input type="text" id="cardNum" maxlength="16" class="card-number-input">
+        </div>
+        <div class="inputBox">
+            <span>Card holder</span>
+            <label for="cardholder"></label>
+            <input type="text" id="cardHolder" class="card-holder-input">
+        </div>
+
+        
+        <div class="flexbox">
+            <div class="inputBox" >
+                <span>expiration mm</span>
+                <select name="" id="monthInput" class="month-input">
+                    <option value="month" selected disabled>Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>expiration yy</span>
+                <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
+                    <option value="year" selected disabled>Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>  
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <div class="inputBox" id="cvvInput">
+                <span>cvv</span>
+                <input type="text" id="cvv" maxlength="3" class="cvv-input" >
+            </div>
+        </div>
+        <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
+    </form>
+
+
+</div> 
+
+<script src="Donation.js"></script>
+</body>
+</html>
